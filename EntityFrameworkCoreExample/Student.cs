@@ -9,10 +9,10 @@ namespace EntityFrameworkCoreExample
 {
 	public class Student
 	{
-		[Key]
+		[Key] //Tell EF Core to make this a Primary Key
 		public int Id { get; set; }
 
-		public string FullName { get; set; }
+		public string? FullName { get; set; }
 
 		public DateTime DateOfBirth { get; set; }
 	}
